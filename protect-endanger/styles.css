@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background: cornflowerblue;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;;
+
+}
+
+/* ----------------------NavBAR-------------------------- */
+ul{
+    list-style: none;
+}
+
+#nav-bar{
+    background: darkslategray;
+    height: 60px;
+}
+#nav-bar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+#nav-bar ul{
+    display: flex;
+}
+#nav-bar li{
+    margin-left: 25px;
+}
+#nav-bar li a{
+    text-decoration: none;
+    color: white;
+}
+#nav-bar .logo{
+    font-size: x-large;
+    font-weight: bold;
+    font-style:italic;
+    color: white;
+}
+
+
+
+/* -----------------------main---------------------- */
+img{
+    height: 150px;
+    width: 200px;
+    
+}
+#home{
+    background: black;
+     background-image: url("https://cdn.britannica.com/q:60/52/170952-050-A545E35D/carnivore-Snow-leopard-regions-subcontinent-Asia-Indian.jpg"); 
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+
+    
+}
+#home .container{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+#home .home-text{
+    /* font-family: 'Cedarville Cursive', cursive; */
+    
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+#home .home-text h5{
+    
+    margin-top: 110px;
+    font-size: 50px;
+}
+#home .home-text h6{
+    
+    font-size: 35px;
+    margin-left: 50px;
+    
+}
+#home .home-text h1{
+    margin-top: 40px;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-family: 'Poppins',sans-serif;
+    color:rgb(77, 4, 77);
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    
+
+}
+#home .home-img h2{
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+/* -----------------------------------about--------------------------------- */
+#about .about-text span{
+    display: block;
+    text-align: center;
+
+    
+    font-size: 25px;
+}
+
+
+#about .about-text{
+    margin-top: 25px;
+    
+    
+}
+#about .about-text p{
+    margin-top: 10px;
+    line-height: 1.5rem;
+    font-weight: bolder;
+}
+#about .about-text .animals{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    border: 2px solid grey;
+    padding: 10px;
+    
+}
+#about .about-text .animals{
+    font-weight: bolder;
+
+}
+#about .about-text .animals p{
+    margin: auto
+}
+
+#about .about-text .parent-animals{
+    display: flex;
+    flex-wrap: wrap;
+}
+#about .about-text .animals:nth-of-type(1),.animals:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+#about .about-text .animals:nth-of-type(5),.animals:nth-of-type(6){
+    flex-direction: row-reverse;
+}
+#about .about-text .animals:nth-of-type(9),.animals:nth-of-type(10){
+    flex-direction: row-reverse;
+}
+
+
+/* ------------------------foooter------------------------ */
+
+#contact{
+    background-color: cyan;
+    text-align: center;
+    min-height: 800px;
+    font-weight: bolder;
+   
+}
+#contact .container{
+    color: darkblue;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+#contact .container .contact-us{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 30px;
+   
+}
+#contact .container .glad-msg{
+    margin-top: 40px;
+    font-size: 30px;
+}
+#contact .container p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#contact .container form label{
+    margin-right: 150px;
+    margin-bottom: 40px;
+}
+#contact .container form input{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 280px;
+    
+    border: none;
+}
+#contact .container form textarea{
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 75px;
+    width: 320px;
+    
+}
+#contact .container form .hello{
+    color: darkblue;
+    margin-top: 25px;
+    margin-left: 32px;
+    margin-right: 60px;
+    
+}
+#contact .container form .ph{
+    margin-right: 75px;
+}
+
+#contact .container .forms-border{
+    border: 2px solid rgb(206, 44, 44);
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: darkgray;
+}
+#contact .container form .submit{
+    margin-top: 40px;
+    background-color: coral;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 25px;
+   
+    
+}
+@media(max-width : 600px){
+    #contact .hello form input{
+        display: block;
+    }
+    #contact .hello form label{
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+    #contact .hello form textarea{
+        display: block;
+        margin-top: 10px;
+        margin-right: 200px;
+    }
+    #home .home-text h1{
+        font-size: 50px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
